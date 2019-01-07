@@ -1,5 +1,5 @@
 module PasswordGenerator
-	NUMBER_OF_CHARACTERS = 16	
+	NUMBER_OF_CHARACTERS = 16
 	def PasswordGenerator.generateRandomPass
 		allowed_chars = {
 			:lowercase => ('a'..'z').to_a,
@@ -19,6 +19,5 @@ module PasswordGenerator
 			pass = pass.shuffle.join
 			puts "Generated password: #{pass}"
 	end
-	PasswordGenerator.generateRandomPass
 end
 
